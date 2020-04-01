@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Source Themes | Yuhan Wang</title>
-    <link>/tags/source-themes/</link>
-      <atom:link href="/tags/source-themes/index.xml" rel="self" type="application/rss+xml" />
-    <description>Source Themes</description>
+    <title>Xiaoming Liu | Yuhan Wang</title>
+    <link>/authors/xiaoming-liu/</link>
+      <atom:link href="/authors/xiaoming-liu/index.xml" rel="self" type="application/rss+xml" />
+    <description>Xiaoming Liu</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
-      <title>Source Themes</title>
-      <link>/tags/source-themes/</link>
+      <title>Xiaoming Liu</title>
+      <link>/authors/xiaoming-liu/</link>
     </image>
     
     <item>
