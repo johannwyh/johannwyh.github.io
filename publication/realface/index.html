@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Senior Undergraduate">
+  <meta name="description" content="In this work, we propose a high fidelity face swap- ping method, called RealFace, which can well pre- serve the face shape of the source face and gen- erate photo-realistic results. Unlike other existing face swapping works that only use face recognition model to keep the identity similarity, we propose 3D shape-aware identity to control the face shape with the geometric supervision from 3DMM and 3D face reconstruction method. Meanwhile, we in- troduce the Semantic Facial Fusion module to opti- mize the combination of encoder and decoder fea- tures and make adaptive blending, which makes the results more photo-realistic. Extensive experiments on wild faces demonstrate that our method can pre- serve better identity, especially on the face shape, and can generate more photo-realistic results than previous state-of-the-art methods. The code will be made available upon acceptance.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/authors/">
+  <link rel="alternate" hreflang="en-us" href="/publication/realface/">
 
   
 
@@ -210,14 +210,12 @@
 
 
   
-  <link rel="alternate" href="/authors/index.xml" type="application/rss+xml" title="Yuhan Wang">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu224b82fdaacbf0b149c3321bcb89dd2b_193285_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu224b82fdaacbf0b149c3321bcb89dd2b_193285_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="/authors/">
+  <link rel="canonical" href="/publication/realface/">
 
   
   
@@ -231,18 +229,59 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Yuhan Wang">
-  <meta property="og:url" content="/authors/">
-  <meta property="og:title" content="Authors | Yuhan Wang">
-  <meta property="og:description" content="Senior Undergraduate"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
+  <meta property="og:url" content="/publication/realface/">
+  <meta property="og:title" content=" RealFace: 3D Shape and Semantic Prior Guided High Fidelity Face Swapping | Yuhan Wang">
+  <meta property="og:description" content="In this work, we propose a high fidelity face swap- ping method, called RealFace, which can well pre- serve the face shape of the source face and gen- erate photo-realistic results. Unlike other existing face swapping works that only use face recognition model to keep the identity similarity, we propose 3D shape-aware identity to control the face shape with the geometric supervision from 3DMM and 3D face reconstruction method. Meanwhile, we in- troduce the Semantic Facial Fusion module to opti- mize the combination of encoder and decoder fea- tures and make adaptive blending, which makes the results more photo-realistic. Extensive experiments on wild faces demonstrate that our method can pre- serve better identity, especially on the face shape, and can generate more photo-realistic results than previous state-of-the-art methods. The code will be made available upon acceptance."><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2020-03-30T00:00:00&#43;00:00">
+    
+    
   
 
   
 
 
+    
 
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/publication/realface/"
+  },
+  "headline": " RealFace: 3D Shape and Semantic Prior Guided High Fidelity Face Swapping",
+  
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "**Yuhan Wang**"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Yuhan Wang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/icon_hu224b82fdaacbf0b149c3321bcb89dd2b_193285_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "In this work, we propose a high fidelity face swap- ping method, called RealFace, which can well pre- serve the face shape of the source face and gen- erate photo-realistic results. Unlike other existing face swapping works that only use face recognition model to keep the identity similarity, we propose 3D shape-aware identity to control the face shape with the geometric supervision from 3DMM and 3D face reconstruction method. Meanwhile, we in- troduce the Semantic Facial Fusion module to opti- mize the combination of encoder and decoder fea- tures and make adaptive blending, which makes the results more photo-realistic. Extensive experiments on wild faces demonstrate that our method can pre- serve better identity, especially on the face shape, and can generate more photo-realistic results than previous state-of-the-art methods. The code will be made available upon acceptance."
+}
+</script>
+
+  
 
   
 
@@ -250,10 +289,13 @@
   
 
 
+  
 
 
 
-  <title>Authors | Yuhan Wang</title>
+
+
+  <title> RealFace: 3D Shape and Semantic Prior Guided High Fidelity Face Swapping | Yuhan Wang</title>
 
 </head>
 
@@ -558,6 +600,98 @@
 </nav>
 
 
+  <div class="pub">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1> RealFace: 3D Shape and Semantic Prior Guided High Fidelity Face Swapping</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span><a href="/authors/yuhan-wang/"><strong>Yuhan Wang</strong></a></span>, <span><a href="/authors/xu-chen/">Xu Chen</a></span>, <span><a href="/authors/junwei-zhu/">Junwei Zhu</a></span>, <span><a href="/authors/wenqing-chu/">Wenqing Chu</a></span>, <span><a href="/authors/ying-tai/">Ying Tai</a></span>, <span><a href="/authors/chengjie-wang/">Chengjie Wang</a></span>, <span><a href="/authors/jilin-li/">Jilin Li</a></span>, <span><a href="/authors/yongjian-wu/">Yongjian Wu</a></span>, <span><a href="/authors/feiyue-huang/">Feiyue Huang</a></span>, <span><a href="/authors/rongrong-ji/">Rongrong Ji</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    January 0001
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
   
 
 
@@ -568,77 +702,489 @@
 
 
 
-
-
-
-
-
-  
-
-  
-  
   
     
   
-<div class="universal-wrapper pt-3">
-  <h1>Authors</h1>
 
-  
+
+
+
+
+
+
+
+
+
+
+</div>
+
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
+  <div class="article-container">
 
-  <ul>
     
+    <h3>Abstract</h3>
+    <p class="pub-abstract">In this work, we propose a high fidelity face swap- ping method, called RealFace, which can well pre- serve the face shape of the source face and gen- erate photo-realistic results. Unlike other existing face swapping works that only use face recognition model to keep the identity similarity, we propose 3D shape-aware identity to control the face shape with the geometric supervision from 3DMM and 3D face reconstruction method. Meanwhile, we in- troduce the Semantic Facial Fusion module to opti- mize the combination of encoder and decoder fea- tures and make adaptive blending, which makes the results more photo-realistic. Extensive experiments on wild faces demonstrate that our method can pre- serve better identity, especially on the face shape, and can generate more photo-realistic results than previous state-of-the-art methods. The code will be made available upon acceptance.</p>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            
+            
+            <a href="/publication/#1">
+              Conference paper
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">In <em>2021 International Joint Conferences on Artificial Intelligence (IJCAI 2021)</em></div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/source-themes/">Source Themes</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
     
       
-      <li><a href="/authors/yuhan-wang/">**Yuhan Wang**</a></li>
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/publication/realface/&amp;text=%20RealFace:%203D%20Shape%20and%20Semantic%20Prior%20Guided%20High%20Fidelity%20Face%20Swapping" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
     
       
-      <li><a href="/authors/feiyue-huang/">Feiyue Huang</a></li>
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/publication/realface/&amp;t=%20RealFace:%203D%20Shape%20and%20Semantic%20Prior%20Guided%20High%20Fidelity%20Face%20Swapping" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
     
       
-      <li><a href="/authors/jilin-li/">Jilin Li</a></li>
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%20RealFace:%203D%20Shape%20and%20Semantic%20Prior%20Guided%20High%20Fidelity%20Face%20Swapping&amp;body=/publication/realface/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
     
       
-      <li><a href="/authors/pengcheng-shen/">Pengcheng Shen</a></li>
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/publication/realface/&amp;title=%20RealFace:%203D%20Shape%20and%20Semantic%20Prior%20Guided%20High%20Fidelity%20Face%20Swapping" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
     
       
-      <li><a href="/authors/shaoxin-li/">Shaoxin Li</a></li>
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=%20RealFace:%203D%20Shape%20and%20Semantic%20Prior%20Guided%20High%20Fidelity%20Face%20Swapping%20/publication/realface/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
     
       
-      <li><a href="/authors/xiaoming-liu/">Xiaoming Liu</a></li>
-    
       
-      <li><a href="/authors/ying-tai/">Ying Tai</a></li>
-    
       
-      <li><a href="/authors/yuge-huang/">Yuge Huang</a></li>
-    
+        
       
-      <li><a href="/authors/admin/">Yuhan Wang</a></li>
-    
       
-      <li><a href="/authors/chengjie-wang/">Chengjie Wang</a></li>
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/publication/realface/&amp;title=%20RealFace:%203D%20Shape%20and%20Semantic%20Prior%20Guided%20High%20Fidelity%20Face%20Swapping" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
     
   </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
   
-<nav>
-  <ul class="pagination justify-content-center">
     
     
-    <li class="page-item"><a class="page-link" href="/authors/page/2/">&raquo;</a></li>
-    
-  </ul>
-</nav>
 
 
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/authors/yuhan-wang/"></a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+    
+
+
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/authors/xu-chen/"></a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+    
+
+
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/authors/junwei-zhu/"></a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+    
+
+
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/authors/wenqing-chu/"></a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+    
+
+
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/authors/ying-tai/"></a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+    
+
+
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/authors/chengjie-wang/"></a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+    
+
+
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/authors/jilin-li/"></a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+    
+
+
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/authors/yongjian-wu/"></a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+    
+
+
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/authors/feiyue-huang/"></a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+    
+
+
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/authors/rongrong-ji/"></a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/publication/curricularface/"> CurricularFace: Adaptive Curriculum Learning Loss for Deep Face Recognition</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
 </div>
 
       
