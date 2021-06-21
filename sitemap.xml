@@ -33,32 +33,92 @@
   </url>
   
   <url>
-    <loc>/publication/curricularface/</loc>
-    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
+    <loc>/publication/hififace/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/yuhan-wang/</loc>
-    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/publication_types/1/</loc>
-    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/</loc>
-    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/chengjie-wang/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/feiyue-huang/</loc>
-    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/jilin-li/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/junwei-zhu/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/rongrong-ji/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/source-themes/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/wenqing-chu/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/xu-chen%5C/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/ying-tai/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/yongjian-wu/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/curricularface/</loc>
     <lastmod>2020-03-30T00:00:00+00:00</lastmod>
   </url>
   
@@ -68,37 +128,12 @@
   </url>
   
   <url>
-    <loc>/publication_types/</loc>
-    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/</loc>
-    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/authors/shaoxin-li/</loc>
     <lastmod>2020-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/source-themes/</loc>
-    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/authors/xiaoming-liu/</loc>
-    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/ying-tai/</loc>
     <lastmod>2020-03-30T00:00:00+00:00</lastmod>
   </url>
   
@@ -185,34 +220,6 @@
   <url>
     <loc>/categories/demo/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/hififace/</loc>
-  </url>
-  
-  <url>
-    <loc>/authors/chengjie-wang/</loc>
-  </url>
-  
-  <url>
-    <loc>/authors/junwei-zhu/</loc>
-  </url>
-  
-  <url>
-    <loc>/authors/rongrong-ji/</loc>
-  </url>
-  
-  <url>
-    <loc>/authors/wenqing-chu/</loc>
-  </url>
-  
-  <url>
-    <loc>/authors/xu-chen%5C/</loc>
-  </url>
-  
-  <url>
-    <loc>/authors/yongjian-wu/</loc>
   </url>
   
 </urlset>

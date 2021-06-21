@@ -77,6 +77,14 @@
     </item>
     
     <item>
+      <title> HifiFace: 3D Shape and Semantic Prior Guided High Fidelity Face Swapping</title>
+      <link>/publication/hififace/</link>
+      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/hififace/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title> CurricularFace: Adaptive Curriculum Learning Loss for Deep Face Recognition</title>
       <link>/publication/curricularface/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
@@ -663,14 +671,6 @@ Three
 &lt;p&gt;Released under the 
 &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title> HifiFace: 3D Shape and Semantic Prior Guided High Fidelity Face Swapping</title>
-      <link>/publication/hififace/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/publication/hififace/</guid>
-      <description></description>
     </item>
     
   </channel>
