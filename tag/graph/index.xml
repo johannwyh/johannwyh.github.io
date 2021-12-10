@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graph | Yuhan Wang</title>
+    <link>https://johann.wang/tag/graph/</link>
+      <atom:link href="https://johann.wang/tag/graph/index.xml" rel="self" type="application/rss+xml" />
+    <description>Graph</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 08 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://johann.wang/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Graph</title>
+      <link>https://johann.wang/tag/graph/</link>
+    </image>
+    
+    <item>
+      <title>Bilevel Programming Derivatives of LDS-GNN</title>
+      <link>https://johann.wang/post/lds-derivation/</link>
+      <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://johann.wang/post/lds-derivation/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Now we have a bilevel programming problem:&lt;/p&gt;
+&lt;p&gt;$$\min_{\theta, w_{\theta}} F(w_{\theta},\theta)\mathrm{\ such\ that\ } w_{\theta}\in \arg \min_{w} L(w, \theta) \tag{1}$$&lt;/p&gt;
+&lt;p&gt;where for the inner problem, $w$ is learned by&lt;/p&gt;
+&lt;p&gt;$$
+w_{\theta, T} = \Phi(w_{\theta, T-1}, \theta) = \Phi(\Phi(w_{\theta,T-2}, \theta), \theta) = \cdots  \tag{2}
+$$&lt;/p&gt;
+&lt;p&gt;As is stated in the paper, we follow a process of &lt;em&gt;$\tau$ times inner, once outer&lt;/em&gt;. In such process we can &lt;strong&gt;directly&lt;/strong&gt; compute the gradients of the outer params, as $\theta$ in our problem.&lt;/p&gt;
+&lt;p&gt;Therefore, our major concern now is to compute $\nabla_{\theta}F(w_{\theta, T}, \theta)$, with which we can update $\theta$ using Adam or SGD optimizer.&lt;/p&gt;
+&lt;h2 id=&#34;derivation&#34;&gt;Derivation&lt;/h2&gt;
+&lt;p&gt;We have inner param $w \in \mathbb{R}^{N_w}$ and outer param $\theta \in \mathbb{R}^{N_{\theta}}$. $\nabla_{\theta}F(w_{\theta, T}, \theta)$ can be written as&lt;/p&gt;
+&lt;p&gt;$$
+\frac{\partial F(w_{\theta, T}, \theta)}{\partial \theta}
+= F_w(w_{\theta, T}, \theta)\cdot \nabla_{\theta}w_{\theta, T} + F_{\theta}(w_{\theta,T},\theta)
+\tag{3}
+$$&lt;/p&gt;
+&lt;p&gt;Here $F_w$ and $F_{\theta}$ can both be easily computed using PyTorch, and $\nabla_{\theta}w_{\theta, T}$ builds the connection to inner updater $\Phi$. As the inner param $w$ undergoes $\tau$ times of update, we have to derive its recursive formula:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\nabla_{\theta}w_{\theta,T}
+&amp;amp;= \frac{\partial \Phi(w_{\theta,T-1}, \theta)}{\partial \theta} \\&lt;br&gt;
+&amp;amp;= \Phi_w(w_{\theta,T-1}, \theta)\cdot \nabla_{\theta}w_{\theta,T-1}+\Phi_{\theta}(w_{\theta,T-1},\theta) \\&lt;br&gt;
+&amp;amp;= D_{T-1} \cdot \nabla_{\theta}w_{\theta,T-1} + E_{T-1}
+\end{aligned}
+\tag{4}
+$$&lt;/p&gt;
+&lt;p&gt;Here $D$ and $E$ denote the jacobian matrix of $\Phi$ w.r.t $w$ and $\theta$ respectively, who can be efficiently computed via Auto Grad. Therefore, $D \in \mathbb{R}^{N_w \times N_w}$, $E \in \mathbb{R}^{N_w \times N_{\theta}}$ and $\nabla_{\theta}w \in \mathbb{R}^{N_w \times N_{\theta}}$. The dimension of $(4)$ matches.&lt;/p&gt;
+&lt;p&gt;If we combine equation $(3)$ and $(4)$, we can derive the equation between $\nabla_{\theta}F(w_{\theta, T}, \theta)$ and $\nabla_{\theta}w_{\theta,T-1}$. Then if we repeat the process of $(4)$ we can get the equation between $\nabla_{\theta}F(w_{\theta, T}, \theta)$ and $\nabla_{\theta}w_{\theta,T-2}$, $\nabla_{\theta}w_{\theta,T-3}$, and so on. Therefore, as is done by LDS-GNN paper, we can try to derive the equation between $\nabla_{\theta}F(w_{\theta, T}, \theta)$ and jacobian matrix $\nabla_{\theta}w_{\theta,t}$ of any round as,&lt;/p&gt;
+&lt;p&gt;$$
+\frac{\partial F(w_{\theta, T}, \theta)}{\partial \theta} = P_t \cdot \nabla_{\theta}w_{\theta, t} + G_t
+\tag{5}
+$$&lt;/p&gt;
+&lt;p&gt;From equation $(3)$ we know that $P_T = F_w(w_{\theta,T},\theta)$ and $G_T = F_{\theta}(w_{\theta,T}, \theta)$, which are both easy to compute. And if equation $(5)$ holds for $t$, we can derive that for $t-1$ as&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\frac{\partial F(w_{\theta, T}, \theta)}{\partial \theta}
+&amp;amp;= P_t \cdot \nabla_{\theta}w_{\theta, t} + G_t \\&lt;br&gt;
+&amp;amp;= P_t \cdot (D_{t-1} \cdot \nabla_{\theta}w_{\theta,t-1} + E_{t-1}) + G_t \\&lt;br&gt;
+&amp;amp;= (P_t \cdot D_{t-1}) \cdot \nabla_{\theta}w_{\theta,t-1} + (P_t \cdot E_{t-1} + G_t) \\&lt;br&gt;
+&amp;amp;= P_{t-1} \cdot \nabla_{\theta}w_{\theta, t-1} + G_{t-1}
+\end{aligned}
+\tag{6}
+$$&lt;/p&gt;
+&lt;p&gt;Hence, $P_{t-1} = P_{t} \cdot D_{t-1}$ and $G_{t-1} = P_{t} \cdot E_{t-1} + G_{t}$.&lt;/p&gt;
+&lt;p&gt;All we need to do is keep deriving it until $t=T-\tau$, where $\nabla_{\theta} w_{\theta, T-\tau} = \mathbf{0}$ as $w_{\theta, T-\tau}$ has nothing to do with current $\theta$.&lt;/p&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\frac{\partial F(w_{\theta, T}, \theta)}{\partial \theta}
+&amp;amp;= P_{T-\tau} \cdot \nabla_{\theta} w_{\theta, T-\tau} + G_{T-\tau} \\&lt;br&gt;
+&amp;amp;= P_{T-\tau} \cdot \nabla_{\theta} w_{\theta, T-\tau} + (P_{T-\tau+1} \cdot E_{T-\tau} + G_{T-\tau+1}) \\&lt;br&gt;
+&amp;amp;= P_{T-\tau+1} \cdot E_{T-\tau} + G_{T-\tau+1}
+\end{aligned}
+\tag{7}
+$$&lt;/p&gt;
+&lt;p&gt;Finally, Eq. $(7)$ gives the final formula of $\nabla_{\theta}F(w_{\theta, T}, \theta)$ in a recursion form. Derivations above exactly correspond to &lt;code&gt;Algorithm 2&lt;/code&gt; in the supplementary material of LDS-GNN.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
