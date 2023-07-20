@@ -60,10 +60,10 @@
   
     
   
-  <meta name="description" content="Ph.D. student of MMLab@NTU" />
+  <meta name="description" content="Unconditional video generation is a challenging task that involves synthesizing high-quality videos that are both coherent and of extended duration. To address this challenge, researchers have used pretrained StyleGAN image generators for high-quality frame synthesis and focused on motion generator design. The motion generator is trained in an autoregressive manner using heavy 3D convolutional discriminators to ensure motion coherence during video generation. In this paper, we introduce a novel motion generator design that uses a learning-based inversion network for GAN. The encoder in our method captures rich and smooth priors from encoding images to latents, and given the latent of an initially generated frame as guidance, our method can generate smooth future latent by modulating the inversion encoder temporally. Our method enjoys the advantage of sparse training and naturally constrains the generation space of our motion generator with the inversion network guided by the initial frame, eliminating the need for heavy discriminators. Moreover, our method supports style transfer with simple fine-tuning when the encoder is paired with a pretrained StyleGAN generator. Extensive experiments conducted on various benchmarks demonstrate the superiority of our method in generating long and high-resolution videos with decent single-frame quality and temporal consistency. We will release our code and model." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://johann.wang/tag/source-themes/" />
+  <link rel="alternate" hreflang="en-us" href="https://johann.wang/publication/styleinv/" />
 
   
   
@@ -271,8 +271,6 @@
   
 
   
-    <link rel="alternate" href="/tag/source-themes/index.xml" type="application/rss+xml" title="Yuhan Wang" />
-  
 
   
     <link rel="manifest" href="/manifest.webmanifest" />
@@ -281,7 +279,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://johann.wang/tag/source-themes/" />
+  <link rel="canonical" href="https://johann.wang/publication/styleinv/" />
 
   
   
@@ -304,33 +302,80 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="Yuhan Wang" />
-  <meta property="og:url" content="https://johann.wang/tag/source-themes/" />
-  <meta property="og:title" content="Source Themes | Yuhan Wang" />
-  <meta property="og:description" content="Ph.D. student of MMLab@NTU" /><meta property="og:image" content="https://johann.wang/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:url" content="https://johann.wang/publication/styleinv/" />
+  <meta property="og:title" content=" StyleInV: A Temporal Style Modulated Inversion Network for Unconditional Video Generation | Yuhan Wang" />
+  <meta property="og:description" content="Unconditional video generation is a challenging task that involves synthesizing high-quality videos that are both coherent and of extended duration. To address this challenge, researchers have used pretrained StyleGAN image generators for high-quality frame synthesis and focused on motion generator design. The motion generator is trained in an autoregressive manner using heavy 3D convolutional discriminators to ensure motion coherence during video generation. In this paper, we introduce a novel motion generator design that uses a learning-based inversion network for GAN. The encoder in our method captures rich and smooth priors from encoding images to latents, and given the latent of an initially generated frame as guidance, our method can generate smooth future latent by modulating the inversion encoder temporally. Our method enjoys the advantage of sparse training and naturally constrains the generation space of our motion generator with the inversion network guided by the initial frame, eliminating the need for heavy discriminators. Moreover, our method supports style transfer with simple fine-tuning when the encoder is paired with a pretrained StyleGAN generator. Extensive experiments conducted on various benchmarks demonstrate the superiority of our method in generating long and high-resolution videos with decent single-frame quality and temporal consistency. We will release our code and model." /><meta property="og:image" content="https://johann.wang/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://johann.wang/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta property="og:updated_time" content="2023-07-20T00:00:00&#43;00:00" />
+      <meta
+        property="article:published_time"
+        content="2023-07-20T00:00:00&#43;00:00"
+      />
     
+    <meta property="article:modified_time" content="2023-07-20T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://johann.wang/publication/styleinv/"
+  },
+  "headline": " StyleInV: A Temporal Style Modulated Inversion Network for Unconditional Video Generation",
+  
+  "datePublished": "2023-07-20T00:00:00Z",
+  "dateModified": "2023-07-20T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Yuhan Wang"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Yuhan Wang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://johann.wang/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Unconditional video generation is a challenging task that involves synthesizing high-quality videos that are both coherent and of extended duration. To address this challenge, researchers have used pretrained StyleGAN image generators for high-quality frame synthesis and focused on motion generator design. The motion generator is trained in an autoregressive manner using heavy 3D convolutional discriminators to ensure motion coherence during video generation. In this paper, we introduce a novel motion generator design that uses a learning-based inversion network for GAN. The encoder in our method captures rich and smooth priors from encoding images to latents, and given the latent of an initially generated frame as guidance, our method can generate smooth future latent by modulating the inversion encoder temporally. Our method enjoys the advantage of sparse training and naturally constrains the generation space of our motion generator with the inversion network guided by the initial frame, eliminating the need for heavy discriminators. Moreover, our method supports style transfer with simple fine-tuning when the encoder is paired with a pretrained StyleGAN generator. Extensive experiments conducted on various benchmarks demonstrate the superiority of our method in generating long and high-resolution videos with decent single-frame quality and temporal consistency. We will release our code and model."
+}
+</script>
+
+  
+
+  
+
   
 
   
 
 
 
-  
-
-  
 
 
-
-
-
-  <title>Source Themes | Yuhan Wang</title>
+  <title> StyleInV: A Temporal Style Modulated Inversion Network for Unconditional Video Generation | Yuhan Wang</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   "  >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="bbcd00f13ff2c359fa8a359548325d51" >
 
   
   
@@ -786,6 +831,17 @@
 
 
 
+<div class="pub">
+
+  
+
+
+
+
+
+
+
+
 
 
 
@@ -794,80 +850,67 @@
 
   
   
+  
+<div class="article-container pt-3">
+  <h1> StyleInV: A Temporal Style Modulated Inversion Network for Unconditional Video Generation</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1>Source Themes</h1>
-
-  
-
-  
-</div>
 
 
-
-<div class="universal-wrapper">
-  
+<div class="article-metadata">
 
   
   
+  
+  
+  <div>
     
-      
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/publication/styleinv/" > StyleInV: A Temporal Style Modulated Inversion Network for Unconditional Video Generation</a>
-    </div>
-
-    
-    <a href="/publication/styleinv/"  class="summary-link">
-      <div class="article-style">
-        
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div>
-        
 
   <span class="author-highlighted">
       Yuhan Wang</span>, <span >
       Liming Jiang</span>, <span >
       Chen Change Loy</span>
-      </div>
-      
-    </div>
+  </div>
+  
+  
 
-    <div class="article-style">In <em>2023 International Conference on Computer Vision (ICCV 2023)</em></div>
+  
+  <span class="article-date">
+    
+    
+      
+    
+    July 2023
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
 
     
-    <div class="btn-links">
-      
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
 
 
 
@@ -882,7 +925,7 @@
 
 
 
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+<a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
         data-filename="/publication/styleinv/cite.bib">
   Cite
 </a>
@@ -905,292 +948,325 @@
 
 
 
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
 </div>
-    
-  
-    
-      
-
-
-
-
-
 
 
   
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/publication/hififace/" > HifiFace: 3D Shape and Semantic Prior Guided High Fidelity Face Swapping</a>
-    </div>
-
-    
-    <a href="/publication/hififace/"  class="summary-link">
-      <div class="article-style">
-        
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div>
-        
-
-  <span class="author-highlighted">
-      Yuhan Wang</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
-      Xu Chen</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
-      Junwei Zhu</span>, <span >
-      Wenqing Chu</span>, <span >
-      Ying Tai</span>, <span >
-      Chengjie Wang</span>, <span >
-      Jilin Li</span>, <span >
-      Yongjian Wu</span>, <span >
-      Feiyue Huang</span>, <span >
-      Rongrong Ji</span>
-      </div>
-      
-    </div>
-
-    <div class="article-style">In <em>2021 International Joint Conferences on Artificial Intelligence (IJCAI 2021)</em></div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/pdf/2106.09965.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/hififace/cite.bib">
-  Cite
-</a>
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://johann.wang/HifiFace/" target="_blank" rel="noopener">
-  Dataset
-</a>
-
-
-
-  
-    
-  
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="http://johann.wang/HifiFace" target="_blank" rel="noopener">
-    Project Page</a>
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/publication/hififace/" >
-      <img src="/publication/hififace/featured_huadfc11713bcfebbcdff2d7934cb6c3d2_2975196_150x0_resize_lanczos_3.png" alt=" HifiFace: 3D Shape and Semantic Prior Guided High Fidelity Face Swapping" loading="lazy">
-    </a>
-    
-  </div>
 </div>
-    
-  
-    
-      
 
 
 
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/publication/curricularface/" > CurricularFace: Adaptive Curriculum Learning Loss for Deep Face Recognition</a>
-    </div>
+  <div class="article-container">
 
     
-    <a href="/publication/curricularface/"  class="summary-link">
-      <div class="article-style">
-        
+    <h3>Abstract</h3>
+    <p class="pub-abstract">Unconditional video generation is a challenging task that involves synthesizing high-quality videos that are both coherent and of extended duration. To address this challenge, researchers have used pretrained StyleGAN image generators for high-quality frame synthesis and focused on motion generator design. The motion generator is trained in an autoregressive manner using heavy 3D convolutional discriminators to ensure motion coherence during video generation. In this paper, we introduce a novel motion generator design that uses a learning-based inversion network for GAN. The encoder in our method captures rich and smooth priors from encoding images to latents, and given the latent of an initially generated frame as guidance, our method can generate smooth future latent by modulating the inversion encoder temporally. Our method enjoys the advantage of sparse training and naturally constrains the generation space of our motion generator with the inversion network guided by the initial frame, eliminating the need for heavy discriminators. Moreover, our method supports style transfer with simple fine-tuning when the encoder is paired with a pretrained StyleGAN generator. Extensive experiments conducted on various benchmarks demonstrate the superiority of our method in generating long and high-resolution videos with decent single-frame quality and temporal consistency. We will release our code and model.</p>
+    
+
+    
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            <a href="/publication/#1">
+              Conference paper
+            </a>
+          </div>
+        </div>
       </div>
-    </a>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
     
 
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div>
-        
-
-  <span >
-      Yuge Huang</span>, <span class="author-highlighted">
-      Yuhan Wang</span>, <span >
-      Ying Tai</span>, <span >
-      Xiaoming Liu</span>, <span >
-      Pengcheng Shen</span>, <span >
-      Shaoxin Li</span>, <span >
-      Jilin Li</span>, <span >
-      Feiyue Huang</span>
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">In <em>2023 International Conference on Computer Vision (ICCV 2023)</em></div>
+        </div>
       </div>
-      
+      <div class="col-md-1"></div>
     </div>
+    <div class="d-md-none space-below"></div>
+    
 
-    <div class="article-style">In <em>2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2020)</em></div>
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
 
     
-    <div class="btn-links">
-      
 
 
 
 
 
 
-
-
+<div class="article-tags">
   
-    
+  <a class="badge badge-light" href="/tag/source-themes/">Source Themes</a>
   
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/pdf/2004.00288.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/curricularface/cite.bib">
-  Cite
-</a>
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/HuangYG123/CurricularFace" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-  
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/publication/curricularface/" >
-      <img src="/publication/curricularface/featured_huc2dbb386760bd6fcda225f4b08533820_98441_150x0_resize_lanczos_3.png" alt=" CurricularFace: Adaptive Curriculum Learning Loss for Deep Face Recognition" loading="lazy">
-    </a>
-    
-  </div>
 </div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://johann.wang/publication/styleinv/&amp;text=%20StyleInV:%20A%20Temporal%20Style%20Modulated%20Inversion%20Network%20for%20Unconditional%20Video%20Generation" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://johann.wang/publication/styleinv/&amp;t=%20StyleInV:%20A%20Temporal%20Style%20Modulated%20Inversion%20Network%20for%20Unconditional%20Video%20Generation" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%20StyleInV:%20A%20Temporal%20Style%20Modulated%20Inversion%20Network%20for%20Unconditional%20Video%20Generation&amp;body=https://johann.wang/publication/styleinv/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://johann.wang/publication/styleinv/&amp;title=%20StyleInV:%20A%20Temporal%20Style%20Modulated%20Inversion%20Network%20for%20Unconditional%20Video%20Generation" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=%20StyleInV:%20A%20Temporal%20Style%20Modulated%20Inversion%20Network%20for%20Unconditional%20Video%20Generation%20https://johann.wang/publication/styleinv/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://johann.wang/publication/styleinv/&amp;title=%20StyleInV:%20A%20Temporal%20Style%20Modulated%20Inversion%20Network%20for%20Unconditional%20Video%20Generation" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
     
   
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://johann.wang/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hue12bc46c4262a5cf74faf8a44f79415f_579389_270x270_fill_q75_lanczos_center.jpg" alt="Yuhan Wang"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://johann.wang/">Yuhan Wang</a></h5>
+      <h6 class="card-subtitle">Ph.D. student of MMLab@NTU</h6>
+      <p class="card-text">My current research lies in video generation and its downstream tasks.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:yuhan004@e.ntu.edu.sg" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/JohannWang4" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=TGXfPg4AAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/johannwyh" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/%E5%AE%87%E6%99%97-%E7%8E%8B-1722641a1/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/publication/hififace/"> HifiFace: 3D Shape and Semantic Prior Guided High Fidelity Face Swapping</a></li>
+      
+      <li><a href="/publication/curricularface/"> CurricularFace: Adaptive Curriculum Learning Loss for Deep Face Recognition</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
 </div>
   </div>
 

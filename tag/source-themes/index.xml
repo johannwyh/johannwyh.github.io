@@ -5,12 +5,20 @@
     <link>https://johann.wang/tag/source-themes/</link>
       <atom:link href="https://johann.wang/tag/source-themes/index.xml" rel="self" type="application/rss+xml" />
     <description>Source Themes</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 20 Jul 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://johann.wang/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Source Themes</title>
       <link>https://johann.wang/tag/source-themes/</link>
     </image>
+    
+    <item>
+      <title> StyleInV: A Temporal Style Modulated Inversion Network for Unconditional Video Generation</title>
+      <link>https://johann.wang/publication/styleinv/</link>
+      <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://johann.wang/publication/styleinv/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title> HifiFace: 3D Shape and Semantic Prior Guided High Fidelity Face Swapping</title>
