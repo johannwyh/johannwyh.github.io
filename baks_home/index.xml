@@ -13,6 +13,14 @@
     </image>
     
     <item>
+      <title>Recent Posts</title>
+      <link>https://johann.wang/baks_home/posts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://johann.wang/baks_home/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Projects</title>
       <link>https://johann.wang/baks_home/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
