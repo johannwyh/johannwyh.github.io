@@ -60,10 +60,10 @@
   
     
   
-  <meta name="description" content="Unconditional video generation is a challenging task that involves synthesizing high-quality videos that are both coherent and of extended duration. To address this challenge, researchers have used pretrained StyleGAN image generators for high-quality frame synthesis and focused on motion generator design. The motion generator is trained in an autoregressive manner using heavy 3D convolutional discriminators to ensure motion coherence during video generation. In this paper, we introduce a novel motion generator design that uses a learning-based inversion network for GAN. The encoder in our method captures rich and smooth priors from encoding images to latents, and given the latent of an initially generated frame as guidance, our method can generate smooth future latent by modulating the inversion encoder temporally. Our method enjoys the advantage of sparse training and naturally constrains the generation space of our motion generator with the inversion network guided by the initial frame, eliminating the need for heavy discriminators. Moreover, our method supports style transfer with simple fine-tuning when the encoder is paired with a pretrained StyleGAN generator. Extensive experiments conducted on various benchmarks demonstrate the superiority of our method in generating long and high-resolution videos with decent single-frame quality and temporal consistency." />
+  <meta name="description" content="Multiview diffusion models have shown considerable success in image-to-3D generation for general objects. However, when applied to human data, existing methods have yet to deliver promising results, largely due to the challenges of scaling multiview attention to higher resolutions. In this paper, we explore human multiview diffusion models at the megapixel level and introduce a solution called mesh attention to enable training at 1024x1024 resolution. Using a clothed human mesh as a central coarse geometric representation, the proposed mesh attention leverages rasterization and projection to establish direct cross-view coordinate correspondences. This approach significantly reduces the complexity of multiview attention while maintaining cross-view consistency. Building on this foundation, we devise a mesh attention block and combine it with keypoint conditioning to create our human-specific multiview diffusion model, MEAT. In addition, we present valuable insights into applying multiview human motion videos for diffusion training, addressing the longstanding issue of data scarcity. Extensive experiments show that MEAT effectively generates dense, consistent multiview human images at the megapixel level, outperforming existing multiview diffusion methods." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://johann.wang/publication/styleinv/" />
+  <link rel="alternate" hreflang="en-us" href="https://johann.wang/publication/meat/" />
 
   
   
@@ -279,7 +279,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://johann.wang/publication/styleinv/" />
+  <link rel="canonical" href="https://johann.wang/publication/meat/" />
 
   
   
@@ -301,18 +301,18 @@
   <meta property="twitter:card" content="summary_large_image" />
   
   <meta property="og:site_name" content="Yuhan Wang" />
-  <meta property="og:url" content="https://johann.wang/publication/styleinv/" />
-  <meta property="og:title" content=" StyleInV: A Temporal Style Modulated Inversion Network for Unconditional Video Generation | Yuhan Wang" />
-  <meta property="og:description" content="Unconditional video generation is a challenging task that involves synthesizing high-quality videos that are both coherent and of extended duration. To address this challenge, researchers have used pretrained StyleGAN image generators for high-quality frame synthesis and focused on motion generator design. The motion generator is trained in an autoregressive manner using heavy 3D convolutional discriminators to ensure motion coherence during video generation. In this paper, we introduce a novel motion generator design that uses a learning-based inversion network for GAN. The encoder in our method captures rich and smooth priors from encoding images to latents, and given the latent of an initially generated frame as guidance, our method can generate smooth future latent by modulating the inversion encoder temporally. Our method enjoys the advantage of sparse training and naturally constrains the generation space of our motion generator with the inversion network guided by the initial frame, eliminating the need for heavy discriminators. Moreover, our method supports style transfer with simple fine-tuning when the encoder is paired with a pretrained StyleGAN generator. Extensive experiments conducted on various benchmarks demonstrate the superiority of our method in generating long and high-resolution videos with decent single-frame quality and temporal consistency." /><meta property="og:image" content="https://johann.wang/publication/styleinv/featured.jpg" />
-    <meta property="twitter:image" content="https://johann.wang/publication/styleinv/featured.jpg" /><meta property="og:locale" content="en-us" />
+  <meta property="og:url" content="https://johann.wang/publication/meat/" />
+  <meta property="og:title" content=" MEAT: Multiview Diffusion Model for Human Generation on Megapixels with Mesh Attention | Yuhan Wang" />
+  <meta property="og:description" content="Multiview diffusion models have shown considerable success in image-to-3D generation for general objects. However, when applied to human data, existing methods have yet to deliver promising results, largely due to the challenges of scaling multiview attention to higher resolutions. In this paper, we explore human multiview diffusion models at the megapixel level and introduce a solution called mesh attention to enable training at 1024x1024 resolution. Using a clothed human mesh as a central coarse geometric representation, the proposed mesh attention leverages rasterization and projection to establish direct cross-view coordinate correspondences. This approach significantly reduces the complexity of multiview attention while maintaining cross-view consistency. Building on this foundation, we devise a mesh attention block and combine it with keypoint conditioning to create our human-specific multiview diffusion model, MEAT. In addition, we present valuable insights into applying multiview human motion videos for diffusion training, addressing the longstanding issue of data scarcity. Extensive experiments show that MEAT effectively generates dense, consistent multiview human images at the megapixel level, outperforming existing multiview diffusion methods." /><meta property="og:image" content="https://johann.wang/publication/meat/featured.jpg" />
+    <meta property="twitter:image" content="https://johann.wang/publication/meat/featured.jpg" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2023-07-20T00:00:00&#43;00:00"
+        content="2025-03-10T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2023-07-20T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2025-03-10T00:00:00&#43;00:00">
   
 
   
@@ -334,16 +334,16 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://johann.wang/publication/styleinv/"
+    "@id": "https://johann.wang/publication/meat/"
   },
-  "headline": " StyleInV: A Temporal Style Modulated Inversion Network for Unconditional Video Generation",
+  "headline": " MEAT: Multiview Diffusion Model for Human Generation on Megapixels with Mesh Attention",
   
   "image": [
-    "https://johann.wang/publication/styleinv/featured.jpg"
+    "https://johann.wang/publication/meat/featured.jpg"
   ],
   
-  "datePublished": "2023-07-20T00:00:00Z",
-  "dateModified": "2023-07-20T00:00:00Z",
+  "datePublished": "2025-03-10T00:00:00Z",
+  "dateModified": "2025-03-10T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -358,7 +358,7 @@
       "url": "https://johann.wang/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Unconditional video generation is a challenging task that involves synthesizing high-quality videos that are both coherent and of extended duration. To address this challenge, researchers have used pretrained StyleGAN image generators for high-quality frame synthesis and focused on motion generator design. The motion generator is trained in an autoregressive manner using heavy 3D convolutional discriminators to ensure motion coherence during video generation. In this paper, we introduce a novel motion generator design that uses a learning-based inversion network for GAN. The encoder in our method captures rich and smooth priors from encoding images to latents, and given the latent of an initially generated frame as guidance, our method can generate smooth future latent by modulating the inversion encoder temporally. Our method enjoys the advantage of sparse training and naturally constrains the generation space of our motion generator with the inversion network guided by the initial frame, eliminating the need for heavy discriminators. Moreover, our method supports style transfer with simple fine-tuning when the encoder is paired with a pretrained StyleGAN generator. Extensive experiments conducted on various benchmarks demonstrate the superiority of our method in generating long and high-resolution videos with decent single-frame quality and temporal consistency."
+  "description": "Multiview diffusion models have shown considerable success in image-to-3D generation for general objects. However, when applied to human data, existing methods have yet to deliver promising results, largely due to the challenges of scaling multiview attention to higher resolutions. In this paper, we explore human multiview diffusion models at the megapixel level and introduce a solution called mesh attention to enable training at 1024x1024 resolution. Using a clothed human mesh as a central coarse geometric representation, the proposed mesh attention leverages rasterization and projection to establish direct cross-view coordinate correspondences. This approach significantly reduces the complexity of multiview attention while maintaining cross-view consistency. Building on this foundation, we devise a mesh attention block and combine it with keypoint conditioning to create our human-specific multiview diffusion model, MEAT. In addition, we present valuable insights into applying multiview human motion videos for diffusion training, addressing the longstanding issue of data scarcity. Extensive experiments show that MEAT effectively generates dense, consistent multiview human images at the megapixel level, outperforming existing multiview diffusion methods."
 }
 </script>
 
@@ -374,11 +374,11 @@
 
 
 
-  <title> StyleInV: A Temporal Style Modulated Inversion Network for Unconditional Video Generation | Yuhan Wang</title>
+  <title> MEAT: Multiview Diffusion Model for Human Generation on Megapixels with Mesh Attention | Yuhan Wang</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="bbcd00f13ff2c359fa8a359548325d51" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="bb9caa169b65d06b614df66bff00063b" >
 
   
   
@@ -887,7 +887,7 @@
 
 
 <div class="article-container pt-3">
-  <h1> StyleInV: A Temporal Style Modulated Inversion Network for Unconditional Video Generation</h1>
+  <h1> MEAT: Multiview Diffusion Model for Human Generation on Megapixels with Mesh Attention</h1>
 
   
 
@@ -905,7 +905,10 @@
 
   <span class="author-highlighted">
       Yuhan Wang</span>, <span >
+      Fangzhou Hong</span>, <span >
+      Shuai Yang</span>, <span >
       Liming Jiang</span>, <span >
+      Wayne Wu</span>, <span >
       Chen Change Loy</span>
   </div>
   
@@ -917,7 +920,7 @@
     
       
     
-    July 2023
+    March 2025
   </span>
   
 
@@ -954,19 +957,13 @@
 
 
   
-    
-  
 
 
-
-<a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/abs/2308.16909" target="_blank" rel="noopener">
-  PDF
-</a>
 
 
 
 <a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
-        data-filename="/publication/styleinv/cite.bib">
+        data-filename="/publication/meat/cite.bib">
   Cite
 </a>
 
@@ -975,7 +972,7 @@
   
     
   
-<a class="btn btn-outline-primary btn-page-header" href="https://github.com/johannwyh/StyleInV" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="https://github.com/johannwyh/MEAT" target="_blank" rel="noopener">
   Code
 </a>
 
@@ -992,14 +989,6 @@
 
 
 
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header" href="https://www.youtube.com/watch?v=WkQnezQ2fh4" target="_blank" rel="noopener">
-  Video
-</a>
-
 
 
 
@@ -1014,7 +1003,7 @@
   
     
   
-  <a class="btn btn-outline-primary btn-page-header" href="https://www.mmlab-ntu.com/project/styleinv/index.html" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary btn-page-header" href="https://johann.wang/MEAT/" target="_blank" rel="noopener">
     Project Page</a>
 
 
@@ -1024,9 +1013,9 @@
 </div>
 
 
-<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 474px;">
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 796px;">
   <div style="position: relative">
-    <img src="/publication/styleinv/featured_hub8da68ead0c84007d53f3e784370b27f_278648_720x0_resize_q75_lanczos.jpg" width="720" height="474" alt="" class="featured-image">
+    <img src="/publication/meat/featured_hub74f43e1a8246a597d2ce4580f78a007_158727_720x0_resize_q75_lanczos.jpg" width="720" height="796" alt="" class="featured-image">
     <span class="article-header-caption">Image credit: <a href="https://unsplash.com/photos/pLCdAaMFLTE"><strong>Unsplash</strong></a></span>
   </div>
 </div>
@@ -1037,7 +1026,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Unconditional video generation is a challenging task that involves synthesizing high-quality videos that are both coherent and of extended duration. To address this challenge, researchers have used pretrained StyleGAN image generators for high-quality frame synthesis and focused on motion generator design. The motion generator is trained in an autoregressive manner using heavy 3D convolutional discriminators to ensure motion coherence during video generation. In this paper, we introduce a novel motion generator design that uses a learning-based inversion network for GAN. The encoder in our method captures rich and smooth priors from encoding images to latents, and given the latent of an initially generated frame as guidance, our method can generate smooth future latent by modulating the inversion encoder temporally. Our method enjoys the advantage of sparse training and naturally constrains the generation space of our motion generator with the inversion network guided by the initial frame, eliminating the need for heavy discriminators. Moreover, our method supports style transfer with simple fine-tuning when the encoder is paired with a pretrained StyleGAN generator. Extensive experiments conducted on various benchmarks demonstrate the superiority of our method in generating long and high-resolution videos with decent single-frame quality and temporal consistency.</p>
+    <p class="pub-abstract">Multiview diffusion models have shown considerable success in image-to-3D generation for general objects. However, when applied to human data, existing methods have yet to deliver promising results, largely due to the challenges of scaling multiview attention to higher resolutions. In this paper, we explore human multiview diffusion models at the megapixel level and introduce a solution called mesh attention to enable training at 1024x1024 resolution. Using a clothed human mesh as a central coarse geometric representation, the proposed mesh attention leverages rasterization and projection to establish direct cross-view coordinate correspondences. This approach significantly reduces the complexity of multiview attention while maintaining cross-view consistency. Building on this foundation, we devise a mesh attention block and combine it with keypoint conditioning to create our human-specific multiview diffusion model, MEAT. In addition, we present valuable insights into applying multiview human motion videos for diffusion training, addressing the longstanding issue of data scarcity. Extensive experiments show that MEAT effectively generates dense, consistent multiview human images at the megapixel level, outperforming existing multiview diffusion methods.</p>
     
 
     
@@ -1065,7 +1054,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">In <em>2023 International Conference on Computer Vision (ICCV 2023)</em></div>
+          <div class="col-12 col-md-9">In <em>2025 Conference on Computer Vision and Pattern Recognition (CVPR 2025)</em></div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -1103,7 +1092,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://johann.wang/publication/styleinv/&amp;text=%20StyleInV:%20A%20Temporal%20Style%20Modulated%20Inversion%20Network%20for%20Unconditional%20Video%20Generation" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://johann.wang/publication/meat/&amp;text=%20MEAT:%20Multiview%20Diffusion%20Model%20for%20Human%20Generation%20on%20Megapixels%20with%20Mesh%20Attention" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -1116,7 +1105,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://johann.wang/publication/styleinv/&amp;t=%20StyleInV:%20A%20Temporal%20Style%20Modulated%20Inversion%20Network%20for%20Unconditional%20Video%20Generation" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://johann.wang/publication/meat/&amp;t=%20MEAT:%20Multiview%20Diffusion%20Model%20for%20Human%20Generation%20on%20Megapixels%20with%20Mesh%20Attention" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -1129,7 +1118,7 @@
       
       
       <li>
-        <a href="mailto:?subject=%20StyleInV:%20A%20Temporal%20Style%20Modulated%20Inversion%20Network%20for%20Unconditional%20Video%20Generation&amp;body=https://johann.wang/publication/styleinv/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=%20MEAT:%20Multiview%20Diffusion%20Model%20for%20Human%20Generation%20on%20Megapixels%20with%20Mesh%20Attention&amp;body=https://johann.wang/publication/meat/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1142,7 +1131,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://johann.wang/publication/styleinv/&amp;title=%20StyleInV:%20A%20Temporal%20Style%20Modulated%20Inversion%20Network%20for%20Unconditional%20Video%20Generation" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https://johann.wang/publication/meat/&amp;title=%20MEAT:%20Multiview%20Diffusion%20Model%20for%20Human%20Generation%20on%20Megapixels%20with%20Mesh%20Attention" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1155,7 +1144,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=%20StyleInV:%20A%20Temporal%20Style%20Modulated%20Inversion%20Network%20for%20Unconditional%20Video%20Generation%20https://johann.wang/publication/styleinv/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=%20MEAT:%20Multiview%20Diffusion%20Model%20for%20Human%20Generation%20on%20Megapixels%20with%20Mesh%20Attention%20https://johann.wang/publication/meat/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1168,7 +1157,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://johann.wang/publication/styleinv/&amp;title=%20StyleInV:%20A%20Temporal%20Style%20Modulated%20Inversion%20Network%20for%20Unconditional%20Video%20Generation" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://johann.wang/publication/meat/&amp;title=%20MEAT:%20Multiview%20Diffusion%20Model%20for%20Human%20Generation%20on%20Megapixels%20with%20Mesh%20Attention" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1311,6 +1300,24 @@
 
 
   
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
 
 
 
@@ -1331,9 +1338,9 @@
     <h3>Related</h3>
     <ul>
       
-      <li><a href="/publication/meat/"> MEAT: Multiview Diffusion Model for Human Generation on Megapixels with Mesh Attention</a></li>
-      
       <li><a href="/publication/radar-diffusion/"> Towards Dense and Accurate Radar Perception Via Efficient Cross-Modal Diffusion Model</a></li>
+      
+      <li><a href="/publication/styleinv/"> StyleInV: A Temporal Style Modulated Inversion Network for Unconditional Video Generation</a></li>
       
       <li><a href="/publication/hififace/"> HifiFace: 3D Shape and Semantic Prior Guided High Fidelity Face Swapping</a></li>
       
