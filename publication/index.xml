@@ -5,12 +5,20 @@
     <link>https://johann.wang/publication/</link>
       <atom:link href="https://johann.wang/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 11 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 24 Dec 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://johann.wang/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
       <link>https://johann.wang/publication/</link>
     </image>
+    
+    <item>
+      <title> UltraShape 1.0: High-Fidelity 3D Shape Generation via Scalable Geometric Refinement</title>
+      <link>https://johann.wang/publication/ultrashape/</link>
+      <pubDate>Wed, 24 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://johann.wang/publication/ultrashape/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title> Light-SQ: Structure-aware Shape Abstraction with Superquadrics for Generated Meshes</title>

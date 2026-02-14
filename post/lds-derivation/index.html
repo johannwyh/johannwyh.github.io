@@ -962,8 +962,8 @@ $$</p>
 <p>$$
 \begin{aligned}
 \nabla_{\theta}w_{\theta,T}
-&amp;= \frac{\partial \Phi(w_{\theta,T-1}, \theta)}{\partial \theta} \\<br>
-&amp;= \Phi_w(w_{\theta,T-1}, \theta)\cdot \nabla_{\theta}w_{\theta,T-1}+\Phi_{\theta}(w_{\theta,T-1},\theta) \\<br>
+&amp;= \frac{\partial \Phi(w_{\theta,T-1}, \theta)}{\partial \theta} \\
+&amp;= \Phi_w(w_{\theta,T-1}, \theta)\cdot \nabla_{\theta}w_{\theta,T-1}+\Phi_{\theta}(w_{\theta,T-1},\theta) \\
 &amp;= D_{T-1} \cdot \nabla_{\theta}w_{\theta,T-1} + E_{T-1}
 \end{aligned}
 \tag{4}
@@ -978,9 +978,9 @@ $$</p>
 <p>$$
 \begin{aligned}
 \frac{\partial F(w_{\theta, T}, \theta)}{\partial \theta}
-&amp;= P_t \cdot \nabla_{\theta}w_{\theta, t} + G_t \\<br>
-&amp;= P_t \cdot (D_{t-1} \cdot \nabla_{\theta}w_{\theta,t-1} + E_{t-1}) + G_t \\<br>
-&amp;= (P_t \cdot D_{t-1}) \cdot \nabla_{\theta}w_{\theta,t-1} + (P_t \cdot E_{t-1} + G_t) \\<br>
+&amp;= P_t \cdot \nabla_{\theta}w_{\theta, t} + G_t \\
+&amp;= P_t \cdot (D_{t-1} \cdot \nabla_{\theta}w_{\theta,t-1} + E_{t-1}) + G_t \\
+&amp;= (P_t \cdot D_{t-1}) \cdot \nabla_{\theta}w_{\theta,t-1} + (P_t \cdot E_{t-1} + G_t) \\
 &amp;= P_{t-1} \cdot \nabla_{\theta}w_{\theta, t-1} + G_{t-1}
 \end{aligned}
 \tag{6}
@@ -990,8 +990,8 @@ $$</p>
 <p>$$
 \begin{aligned}
 \frac{\partial F(w_{\theta, T}, \theta)}{\partial \theta}
-&amp;= P_{T-\tau} \cdot \nabla_{\theta} w_{\theta, T-\tau} + G_{T-\tau} \\<br>
-&amp;= P_{T-\tau} \cdot \nabla_{\theta} w_{\theta, T-\tau} + (P_{T-\tau+1} \cdot E_{T-\tau} + G_{T-\tau+1}) \\<br>
+&amp;= P_{T-\tau} \cdot \nabla_{\theta} w_{\theta, T-\tau} + G_{T-\tau} \\
+&amp;= P_{T-\tau} \cdot \nabla_{\theta} w_{\theta, T-\tau} + (P_{T-\tau+1} \cdot E_{T-\tau} + G_{T-\tau+1}) \\
 &amp;= P_{T-\tau+1} \cdot E_{T-\tau} + G_{T-\tau+1}
 \end{aligned}
 \tag{7}

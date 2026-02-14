@@ -168,6 +168,14 @@ The variance of the distribution is $\sigma^{2}$.
     </item>
     
     <item>
+      <title> UltraShape 1.0: High-Fidelity 3D Shape Generation via Scalable Geometric Refinement</title>
+      <link>https://johann.wang/publication/ultrashape/</link>
+      <pubDate>Wed, 24 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://johann.wang/publication/ultrashape/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title> Light-SQ: Structure-aware Shape Abstraction with Superquadrics for Generated Meshes</title>
       <link>https://johann.wang/publication/light-sq/</link>
       <pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate>
@@ -224,8 +232,8 @@ $$&lt;/p&gt;
 &lt;p&gt;$$
 \begin{aligned}
 \nabla_{\theta}w_{\theta,T}
-&amp;amp;= \frac{\partial \Phi(w_{\theta,T-1}, \theta)}{\partial \theta} \\&lt;br&gt;
-&amp;amp;= \Phi_w(w_{\theta,T-1}, \theta)\cdot \nabla_{\theta}w_{\theta,T-1}+\Phi_{\theta}(w_{\theta,T-1},\theta) \\&lt;br&gt;
+&amp;amp;= \frac{\partial \Phi(w_{\theta,T-1}, \theta)}{\partial \theta} \\
+&amp;amp;= \Phi_w(w_{\theta,T-1}, \theta)\cdot \nabla_{\theta}w_{\theta,T-1}+\Phi_{\theta}(w_{\theta,T-1},\theta) \\
 &amp;amp;= D_{T-1} \cdot \nabla_{\theta}w_{\theta,T-1} + E_{T-1}
 \end{aligned}
 \tag{4}
@@ -240,9 +248,9 @@ $$&lt;/p&gt;
 &lt;p&gt;$$
 \begin{aligned}
 \frac{\partial F(w_{\theta, T}, \theta)}{\partial \theta}
-&amp;amp;= P_t \cdot \nabla_{\theta}w_{\theta, t} + G_t \\&lt;br&gt;
-&amp;amp;= P_t \cdot (D_{t-1} \cdot \nabla_{\theta}w_{\theta,t-1} + E_{t-1}) + G_t \\&lt;br&gt;
-&amp;amp;= (P_t \cdot D_{t-1}) \cdot \nabla_{\theta}w_{\theta,t-1} + (P_t \cdot E_{t-1} + G_t) \\&lt;br&gt;
+&amp;amp;= P_t \cdot \nabla_{\theta}w_{\theta, t} + G_t \\
+&amp;amp;= P_t \cdot (D_{t-1} \cdot \nabla_{\theta}w_{\theta,t-1} + E_{t-1}) + G_t \\
+&amp;amp;= (P_t \cdot D_{t-1}) \cdot \nabla_{\theta}w_{\theta,t-1} + (P_t \cdot E_{t-1} + G_t) \\
 &amp;amp;= P_{t-1} \cdot \nabla_{\theta}w_{\theta, t-1} + G_{t-1}
 \end{aligned}
 \tag{6}
@@ -252,8 +260,8 @@ $$&lt;/p&gt;
 &lt;p&gt;$$
 \begin{aligned}
 \frac{\partial F(w_{\theta, T}, \theta)}{\partial \theta}
-&amp;amp;= P_{T-\tau} \cdot \nabla_{\theta} w_{\theta, T-\tau} + G_{T-\tau} \\&lt;br&gt;
-&amp;amp;= P_{T-\tau} \cdot \nabla_{\theta} w_{\theta, T-\tau} + (P_{T-\tau+1} \cdot E_{T-\tau} + G_{T-\tau+1}) \\&lt;br&gt;
+&amp;amp;= P_{T-\tau} \cdot \nabla_{\theta} w_{\theta, T-\tau} + G_{T-\tau} \\
+&amp;amp;= P_{T-\tau} \cdot \nabla_{\theta} w_{\theta, T-\tau} + (P_{T-\tau+1} \cdot E_{T-\tau} + G_{T-\tau+1}) \\
 &amp;amp;= P_{T-\tau+1} \cdot E_{T-\tau} + G_{T-\tau+1}
 \end{aligned}
 \tag{7}
@@ -329,15 +337,15 @@ $$&lt;/p&gt;
 {{% fragment %}} Three {{% /fragment %}}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
-One
+&lt;span class=&#34;fragment &#34; &gt;
+   One 
 &lt;/span&gt;
 &lt;span class=&#34;fragment &#34; &gt;
-&lt;strong&gt;Two&lt;/strong&gt;
+   **Two** 
 &lt;/span&gt;
 &lt;span class=&#34;fragment &#34; &gt;
-Three
-&lt;/span&gt;&lt;/p&gt;
+   Three 
+&lt;/span&gt;
 &lt;hr&gt;
 &lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
 &lt;ul&gt;
